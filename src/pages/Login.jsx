@@ -45,7 +45,7 @@ export default function Login() {
           </form>
           <p
             className="signinEsquecer"
-            onClick={() => navigate("/EsqueciASenha")}
+            onClick={() => navigate("/RecuperarSenha")}
           >
             Esqueci a Senha
           </p>
