@@ -55,7 +55,7 @@ export default function Login() {
             />
             <input
               className="inputup"
-              type="text"
+              type="password"
               placeholder="Digite a senha novamente"
               onChange={(e) => setConfirma(e.target.value)}
               value={confirma}
@@ -76,8 +76,8 @@ export default function Login() {
               Entrar
             </button>
           </div>
-          <p className="signinCadastro" onClick={() => navigate("/Cadastro")}>
-            Não tem conta? Cadastre-se
+          <p className="signinCadastro" onClick={() => navigate("/login")}>
+            Já tem conta, faça Login!
           </p>
         </div>
       </div>

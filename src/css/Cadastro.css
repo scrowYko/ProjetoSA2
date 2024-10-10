@@ -1,3 +1,8 @@
+*{
+margin: 0;
+padding: 0;
+}
+
 .container {
     width: 300px;
     margin: 0 auto;
@@ -76,7 +81,7 @@ a:hover {
 .caixaCadastro {
     margin-right: 25vw;
     width: 30vw;
-    height: 50vh;
+    height: 61vh;
     background-color: #000814;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
