@@ -1,5 +1,5 @@
 /* NAV */
-.Box{
+.Box {
     display: flex;
     background-color: #000814; 
     padding: 20px 20px 20px 0px;
@@ -8,21 +8,22 @@
     justify-content: space-around;
 }
 
-.logo{
+.logo {
     width: 100px;
 }
 
-.user{
+.user {
     display: flex;
     gap: 30px;
     align-items: center;
 }
-ul{
+
+ul {
     display: flex;
     flex-direction: row;
     gap: 20px;
-
 }
+
 li {
     list-style: none;    
     cursor: pointer;
@@ -30,19 +31,20 @@ li {
     color: white;
     font-size: 14px;
 }
+
 li:hover {
     color: #0056b3;   
 }
 
-.txt{
+.txt {
     font-size: 20px;
 }
 
-.search{
+.search {
     border-radius: 20px;
     border: #002c53 solid 3px;
     padding: 10px;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     background-color: #315164;
     width: 500px;
     height: 30px;
@@ -50,58 +52,111 @@ li:hover {
 
 /* homeC */
 
-body{
+body {
     background-image: url('../../public/fundocampo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.fundo{
+.fundo {
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20%;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 20px;
+    justify-content: space-around;
 }
 
-.boxTd{
+.boxTd {
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    background-color: #315164;
+    border-radius: 30px;
+    background-color: #000814;
     opacity: 0.8;
-    padding: 40px;
-    width: 30%;
+    padding: 20px;
+
 }
 
-.boxC{
+.boxC {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid #002358;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
 }
 
-.cTitulos{
-    font-family: 'khandB';
+.cTitulos {
+    font-family: 'Khand', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
 }
 
-.boxET{
+.boxET {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
-.nomeT{
-    font-family: 'khandSB';
+.nomeT {
+    font-family: 'KhandB', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
 }
 
-.txt{
+.txt {
+    font-size: 15px;
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    color: #ffffff;
+}
+
+.boxBC {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     gap: 10px;
 }
 
-.boxBC{
+.boxTD2 {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn {
+    border-radius: 15px;
+    border: 2px solid #002c53;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #004080;
+}
+
+.ctgm {
+    color: white;
+    font-family: 'KhandB';
+}
+
+.btn2 {
+    border-radius: 15px;
+    border: 2px solid #4a0000;
+    padding: 5px 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.boxT {
+    display: flex;
+    gap: 20px;
     flex-direction: column;
 }
