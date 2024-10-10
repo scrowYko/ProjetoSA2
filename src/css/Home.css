@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* NAV */
+.Box{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #000814; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+}
+
+.stclogo{
+    font-size: 55px;
+    color: white;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+.user{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-right: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;    
+}
+li {
+    list-style: none;    
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+}
+li:hover {
+    color: blue;   
+}
+
+.txt{
+    font-size: 20px;
+}
+
+.search{
+    width: 50vh;
+    height: 25px;
+    border-radius: 20px;
+    border: solid black 2px;
+    padding: 10px;
+    color: black;
+    margin-right: 80px;
+}
+
+.outros{
+    width: 100vh;
+    margin-left: 50px ;
+}
+

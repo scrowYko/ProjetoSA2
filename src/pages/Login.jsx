@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import '../css/login.css'
+import '../css/Login.css'
 
 export default function Login() {
   const navigate = useNavigate();
@@ -22,45 +22,51 @@ export default function Login() {
     } else window.alert("Senha ou Email incorretos");
   };
   return (
-    <>
-      <div className="signBox">
-        <div className="signLogoBox">
-          <img className="signLogo" src="fifa.svg" alt="Logo" id="logo" />
+      <div className="login">
+        <div className="titulo">
+          <h1 className="stc">STC</h1>
+          <p className="subtitle">Soccer Teammates Clubs</p>
         </div>
-        <div className="caixa">
-          <h1>Log-in</h1>
+
+        <div className="boxlogin">
           <form>
+            <p className="t1">Email:</p>
             <input
               type="text"
               placeholder="Digite seu e-mail"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
             />
+            <p className="t1">Senha:</p>
             <input
               type="password"
               placeholder="Digite sua senha"
               onChange={(e) => setSenha(e.target.value)}
               value={senha}
             />
-          </form>
+          
           <p
-            className="signinEsquecer"
+            className="esqueci"
             onClick={() => navigate("/RecuperarSenha")}
           >
             Esqueci a Senha
           </p>
+          </form>
+
           <button
-            className="signinEntrar"
+            className="buttonentrar"
             type="submit"
             onClick={() => submitLogin()}
           >
             Entrar
           </button>
-          <p className="signinCadastro" onClick={() => navigate("/Cadastro")}>
+          <p className="cadastro" 
+          onClick={() => navigate("/Cadastro")
+
+          }>
             Não tem conta? Cadastre-se
           </p>
         </div>
       </div>
-    </>
   );
 }
