@@ -21,12 +21,9 @@ export default function EsqueciSenha() {
 
   return (
     <>
-      <div className="signBox">
-        <div className="signLogoBox">
-          <img className="signLogo" src="fifa.svg" alt="Logo" id="logo" />
-        </div>
-        <div className="caixa">
-          <h1>Esqueci a Senha</h1>
+      <div className="forgotBox">
+        <div className="caixaforgot">
+          <h1 className="h1forgot">Esqueci a Senha</h1>
           <form onSubmit={alterarSenha}>
             <input
               type="text"
@@ -53,9 +50,11 @@ export default function EsqueciSenha() {
               Enviar
             </button>
           </form>
+          <div className="pforgot">
           <p onClick={() => navigate("/Login")} className="forgotVolta">
             Voltar para o Login
           </p>
+          </div>
         </div>
       </div>
     </>
