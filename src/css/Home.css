@@ -48,4 +48,60 @@ li:hover {
     height: 30px;
 }
 
+/* homeC */
 
+body{
+    background-image: url('../../public/fundocampo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fundo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+    padding: 20px;
+}
+
+.boxTd{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #315164;
+    opacity: 0.8;
+    padding: 40px;
+    width: 30%;
+}
+
+.boxC{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 40px;
+}
+
+.cTitulos{
+    font-family: 'khandB';
+}
+
+.boxET{
+    display: flex;
+    flex-direction: column;
+}
+
+.nomeT{
+    font-family: 'khandSB';
+}
+
+.txt{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.boxBC{
+    display: flex;
+    flex-direction: column;
+}

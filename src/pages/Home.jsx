@@ -1,5 +1,5 @@
+import HomeC from "../components/homeC";
 import NavB from "../components/NavB";
-
 import { React, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/Home.css";
@@ -25,7 +25,14 @@ export default function Home() {
   }
   return (
     <>
+    
     <NavB User="@Garsa" />
+    <HomeC 
+    TITULO={'PAULISTA'}
+    CONTAGEM={'1/10'}
+    TIPOC={'Eliminatorias'}
+    SITUC={'Aberto'}
+    />
     
     </>
   );
