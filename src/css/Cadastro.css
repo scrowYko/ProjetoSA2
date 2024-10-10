@@ -1,7 +1,6 @@
 .container {
     width: 300px;
     margin: 0 auto;
-    padding: 20px;
     background-color: #f0f0f0;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -11,15 +10,13 @@
     justify-content: center;
     align-items: center;
     height: 80vh;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
 }
 
-h1 {
+.up{
     margin-top: 20px;
     margin-left: 20px;
     font-size: 20px;
-    color: #333;
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -28,13 +25,14 @@ form {
     flex-direction: column;
 }
 
-input {
-    margin: 10px;
+.inputup {
+    margin: 5px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 3px solid #002c53;
     border-radius: 40px;
     font-size: 15px;
-    color: #333;
+    color: white;
+    background-color: #000814;
 }
 
 .botaoLoginC {
@@ -46,7 +44,10 @@ input {
     border-radius: 4px;
     cursor: pointer;
 }
-
+.botaoentrar{
+    display: flex;
+    justify-content: center;
+}
 button:hover {
     background-color: #0056b3;
 }
@@ -62,8 +63,8 @@ a:hover {
     text-decoration: underline;
 }
 
-.signBox {
-    background: linear-gradient(to bottom, #2C3E50 60%, #B3CDE0 40%);
+.CadastroBox {
+    background: #001f3b;
     height: 100vh;
     margin: 0;
     display: flex;
@@ -72,21 +73,22 @@ a:hover {
     align-items: center;
 }
 
-.caixa {
+.caixaCadastro {
     margin-right: 25vw;
     width: 30vw;
     height: 50vh;
-    background-color: #f0f0f0;
+    background-color: #000814;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     
 }
 
-.signinEntrar {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 130px;
+.CadastroEntrar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 150px;
     height: 30px;
     background-color: #2C3E50;
@@ -98,34 +100,40 @@ a:hover {
     border-radius: 40px;
     font-size: 15px;
     text-align: center;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    ;
 }
 
-p {
-    font-size: 10px;
-    margin-left: 20px;
-    color: black;
-}
 
 .signinCadastro {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+    display: flex;
     font-size: 15px;
-    margin-top: 5px;
+    color:white;
 }
 
-.signinEsquecer {
-    font-size: 15px;
-    margin-bottom: 10px;
-}
-.signLogo{
+.CadastroEsquecer {
     display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: -5px;
+    display: flex;
+    font-size: 15px;
+    color:white;
 }
-.signLogoBox{
-    padding-right: 50px;
-    padding-top: 115px;
-    padding-bottom: 138px;
+.CadastroLogo{
+    display: flex;
+    width: 300px;
+    height: 387px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.cadastroLogoBox{
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     background-color: white;

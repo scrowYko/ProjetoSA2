@@ -6,8 +6,10 @@ export default function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
+  const [name, setName] = useState("");
   const [emailUser, setEmailUser] = useState("");
   const [passwordUser, setPasswordUser] = useState("");
+  const [confirma, setConfirma] = useState("");
 
   useEffect(() => {
     setEmailUser(localStorage.getItem("email"));
@@ -24,13 +26,12 @@ export default function Login() {
   return (
     <>
       <div className="signBox">
-        <div className="signLogoBox">
-          <img className="signLogo" src="fifa.svg" alt="Logo" id="logo" />
+        <div>
         </div>
         <div className="caixa">
           <h1>Log-in</h1>
           <form>
-            <input
+             <input
               type="text"
               placeholder="Digite seu e-mail"
               onChange={(e) => setEmail(e.target.value)}
@@ -43,22 +44,26 @@ export default function Login() {
               value={senha}
             />
           </form>
+          <div className="signinEsquecer">
           <p
-            className="signinEsquecer"
+            className="ploginE"
             onClick={() => navigate("/RecuperarSenha")}
           >
             Esqueci a Senha
           </p>
-          <button
+          </div>
+          <button 
             className="signinEntrar"
             type="submit"
             onClick={() => submitLogin()}
           >
             Entrar
-          </button>
-          <p className="signinCadastro" onClick={() => navigate("/Cadastro")}>
+          </button> 
+          <div className="LoginCadastro">
+          <p className="ploginC" onClick={() => navigate("/Cadastro")}>
             Não tem conta? Cadastre-se
           </p>
+          </div> 
         </div>
       </div>
     </>
