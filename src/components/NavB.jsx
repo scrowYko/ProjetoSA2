@@ -9,7 +9,7 @@ export default function NavB({}) {
     <div className="Nav">
       <div className="Box">
         <div className="user">
-          <p className="stclogo"> STC </p>
+          <img src="../../public/logo2.png" className="logo" />
         </div>
 
         <input

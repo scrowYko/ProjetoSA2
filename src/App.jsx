@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Cadastro from "./pages/Cadastro";
 import EsqueciSenha from "./pages/RecuperacaoSenha";
 import Login from "./pages/Login";
+import './App.css'
 
 function App() {
   return (

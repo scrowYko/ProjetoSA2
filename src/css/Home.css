@@ -1,25 +1,15 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-
 /* NAV */
 .Box{
     display: flex;
-    justify-content: flex-end;
     background-color: #000814; 
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
+    padding: 20px 20px 20px 0px;
     height: 8vh;
     align-items: center;
+    justify-content: space-around;
 }
 
-.stclogo{
-    font-size: 55px;
-    color: white;
-    margin-left: 20px;
-    margin-right: 100px;
+.logo{
+    width: 100px;
 }
 
 .user{
@@ -30,20 +20,18 @@
 ul{
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    padding-right: 80px;
-    padding-top: 5px;
-    padding-bottom: 5px;    
+    gap: 20px;
+
 }
 li {
     list-style: none;    
     cursor: pointer;
     font-weight: bold;
     color: white;
-    font-size: 15px;
+    font-size: 14px;
 }
 li:hover {
-    color: blue;   
+    color: #0056b3;   
 }
 
 .txt{
@@ -51,17 +39,13 @@ li:hover {
 }
 
 .search{
-    width: 50vh;
-    height: 25px;
     border-radius: 20px;
-    border: solid black 2px;
+    border: #002c53 solid 3px;
     padding: 10px;
-    color: black;
-    margin-right: 80px;
+    color: rgb(255, 255, 255);
+    background-color: #315164;
+    width: 500px;
+    height: 30px;
 }
 
-.outros{
-    width: 100vh;
-    margin-left: 50px ;
-}
 

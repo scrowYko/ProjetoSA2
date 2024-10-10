@@ -22,51 +22,53 @@ export default function Login() {
     } else window.alert("Senha ou Email incorretos");
   };
   return (
-      <div className="login">
-        <div className="titulo">
-          <h1 className="stc">STC</h1>
-          <p className="subtitle">Soccer Teammates Clubs</p>
-        </div>
+    <div className="login">
+      <div className="titulo">
+        <h1 className="stc">STC</h1>
+        <p className="subtitle">Soccer Teammates Clubs</p>
+      </div>
 
-        <div className="boxlogin">
-          <form>
-            <p className="t1">Email:</p>
-            <input
-              type="text"
-              placeholder="Digite seu e-mail"
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-            />
-            <p className="t1">Senha:</p>
-            <input
-              type="password"
-              placeholder="Digite sua senha"
-              onChange={(e) => setSenha(e.target.value)}
-              value={senha}
-            />
-          
+      <div className="boxlogin">
+        <form>
+          <p className="t1">Email:</p>
+          <input
+          className="inputl"
+            type="text"
+            placeholder="Digite seu e-mail"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
+          <p className="t1">Senha:</p>
+          <input
+          className="inputl"
+            type="password"
+            placeholder="Digite sua senha"
+            onChange={(e) => setSenha(e.target.value)}
+            value={senha}
+          />
+
           <p
             className="esqueci"
             onClick={() => navigate("/RecuperarSenha")}
           >
             Esqueci a Senha
           </p>
-          </form>
+        </form>
 
-          <button
-            className="buttonentrar"
-            type="submit"
-            onClick={() => submitLogin()}
-          >
-            Entrar
-          </button>
-          <p className="cadastro" 
+        <button
+          className="buttonentrar"
+          type="submit"
+          onClick={() => submitLogin()}
+        >
+          Entrar
+        </button>
+        <p className="cadastro"
           onClick={() => navigate("/Cadastro")
 
           }>
-            Não tem conta? Cadastre-se
-          </p>
-        </div>
+          Não tem conta? <p className="linkC">Cadastre-se</p>
+        </p>
       </div>
+    </div>
   );
 }

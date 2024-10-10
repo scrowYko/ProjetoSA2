@@ -21,7 +21,7 @@ export default function Home() {
   }, [isLoggedOn]);
 
   const redirect = () => {
-    navigate('./SignIn')
+    navigate('./')
   }
   return (
     <>

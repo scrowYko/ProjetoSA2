@@ -1,7 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 
 .login{
     height: 100vh;
@@ -9,6 +6,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    background-image: url('../../public/fundoFF.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -17,6 +17,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family:'fifa';
+    color: white;
 }
 
 .stc{
@@ -29,15 +31,16 @@
 
 .boxlogin{
 
-    border: 2px black solid;
+    border: 2px #002c53;
     padding: 15px;
     margin: 150px 80px 50px 80px;
     border-radius: 20px;
-    background-color: rgb(28, 28, 65);
+    background-color: #000814;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80vh;
+    opacity: 0.8;
 
 }
 
@@ -46,39 +49,61 @@ form {
     flex-direction: column;
 }
 
-input {
+.inputl {
     margin: 2px 0px 2px 0px;
     padding: 3px 10px 3px 10px;
-    border: 1px solid #ccc;
+    background-color: #000814;
     border-radius: 40px;
     font-size: 15px;
-    color: #333;
+    color: white;
     width: 75vh;
-    border: #001d3b solid 2px;
+    border: #002c53 solid 3px;
 }
 
 .t1{
     color: white;
+    font-family: 'khand';
 }
 
 .esqueci{
     color: white;
+    font-family: 'khand';
+}
+
+.esqueci:hover{
+    color: rgb(0, 119, 255);
+    font-family: 'khandSB';
+    cursor: pointer;
 }
 
 .buttonentrar{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border-radius: 15px;
     border: none;
     width: 20vw;
     padding: 5px;
     margin: 5px;
-    background-color: rgb(59, 59, 218);
+    background-color: #242629;
 }
 button:hover {
-    background-color: #0056b3;
+    background-color: #003874;
 }
 
 
 .cadastro{
     color: white;
+    font-family: 'khand';
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.linkC{
+    color: rgb(255, 255, 255);
+}
+.linkC:hover{
+    color: rgb(0, 119, 255);
+    font-family: 'khandSB';
+    cursor: pointer;
 }
