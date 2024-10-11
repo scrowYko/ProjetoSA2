@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/RecuperarSenha.css";
 
+
 export default function EsqueciSenha() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -9,9 +10,11 @@ export default function EsqueciSenha() {
   const [confirm, setConfirm] = useState("");
   const [emailUser, setEmailUser] = useState("");
 
+
   useEffect(() => {
     setEmailUser(localStorage.getItem("email"));
   }, []);
+
 
   const alterarSenha = () => {
     password == confirm && email == emailUser
@@ -19,14 +22,12 @@ export default function EsqueciSenha() {
       : alert("As senhas não coincidem");
   };
 
+
   return (
     <>
-      <div className="signBox">
-        <div className="signLogoBox">
-          <img className="signLogo" src="fifa.svg" alt="Logo" id="logo" />
-        </div>
-        <div className="caixa">
-          <h1>Esqueci a Senha</h1>
+      <div className="forgotBox">
+        <div className="caixaforgot">
+          <h1 className="h1forgot">Esqueci a Senha</h1>
           <form onSubmit={alterarSenha}>
             <input
               type="text"
@@ -53,11 +54,16 @@ export default function EsqueciSenha() {
               Enviar
             </button>
           </form>
+          <div className="pforgot">
           <p onClick={() => navigate("/Login")} className="forgotVolta">
             Voltar para o Login
           </p>
+          </div>
         </div>
       </div>
     </>
   );
 }
+
+
+

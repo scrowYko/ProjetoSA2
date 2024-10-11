@@ -24,7 +24,7 @@ export default function NavB({}) {
         <ul className="outros">
           <li onClick={() => navigate("/")}>Ranking</li>
           <li onClick={() => navigate("/Perfil")}>Recomendações</li>
-          <li onClick={() => navigate("/Config")}>Novo campeonato</li>
+          <li onClick={() => navigate("/CriarC")}>Novo campeonato</li>
           <li onClick={() => navigate("/Favoritos")}>Meus campeonatos</li>
           <li onClick={() => navigate("/Sobre")}>Sobre Nos</li>
 

@@ -160,3 +160,8 @@ body {
     gap: 20px;
     flex-direction: column;
 }
+
+.logoH{
+    width: 140px;
+    margin-left: -20px;
+}
