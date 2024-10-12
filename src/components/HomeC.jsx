@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function HomeC({ TITULO1, TITULO2, TITULO3, TITULO4, TITULO5, TITULO6, TIPO1, TIPO2, SITUC, LOGO1, LOGO2, LOGO3, LOGO4, LOGO5, LOGO6 }) {
+export default function HomeC({ brasileiraoN, laligaN, premierN, francaN, eredivisieN, UEFAN, europaN, TIPO1, TIPO2, SITUC, brasileiraoL, laligaL, premierL, francaL, eredivisieL, UEFAL, europaL }) {
   const navigate = useNavigate();
   const [query, setQuery] = useState("");
 
@@ -13,9 +13,9 @@ export default function HomeC({ TITULO1, TITULO2, TITULO3, TITULO4, TITULO5, TIT
           <h1 className="cTitulos">Diponíveis:</h1>
           </div>
         <div className="boxC">
-          <img className="logoH"src={LOGO1}/>
+          <img className="logoH"src={brasileiraoL}/>
           <div className="boxET">
-            <h2 className="nomeT">{TITULO1}</h2>
+            <h2 className="nomeT">{brasileiraoN}</h2>
             <div className="txt">
               <p>Tipo: {TIPO2}</p>
               <p>Situação: {SITUC}</p>
@@ -29,9 +29,9 @@ export default function HomeC({ TITULO1, TITULO2, TITULO3, TITULO4, TITULO5, TIT
 
         </div>
         <div className="boxC">
-        <img className="logoH" src={LOGO2}/>
+        <img className="logoH" src={laligaL}/>
           <div className="boxET">
-            <h2 className="nomeT">{TITULO2}</h2>
+            <h2 className="nomeT">{laligaN}</h2>
             <div className="txt">
               <p>Tipo: {TIPO1}</p>
               <p>Situação: {SITUC}</p>
@@ -45,9 +45,9 @@ export default function HomeC({ TITULO1, TITULO2, TITULO3, TITULO4, TITULO5, TIT
 
         </div>
         <div className="boxC">
-        <img className="logoH" src={LOGO3}/>
+        <img className="logoH" src={premierL}/>
           <div className="boxET">
-            <h2 className="nomeT">{TITULO3}</h2>
+            <h2 className="nomeT">{premierN}</h2>
             <div className="txt">
               <p>Tipo: {TIPO1}</p>
               <p>Situação: {SITUC}</p>
@@ -61,9 +61,9 @@ export default function HomeC({ TITULO1, TITULO2, TITULO3, TITULO4, TITULO5, TIT
 
         </div>
         <div className="boxC">
-        <img className="logoH" src={LOGO4}/>
+        <img className="logoH" src={francaL}/>
           <div className="boxET">
-            <h2 className="nomeT">{TITULO4}</h2>
+            <h2 className="nomeT">{francaN}</h2>
             <div className="txt">
               <p>Tipo: {TIPO1}</p>
               <p>Situação: {SITUC}</p>
@@ -84,9 +84,9 @@ export default function HomeC({ TITULO1, TITULO2, TITULO3, TITULO4, TITULO5, TIT
     <h1 className="cTitulos">Campeonatos Ativos:</h1>
     </div>
   <div className="boxC">
-  <img className="logoH" src={LOGO5}/>
+  <img className="logoH" src={eredivisieL}/>
     <div className="boxT">
-      <h2 className="nomeT">{TITULO5}</h2>
+      <h2 className="nomeT">{eredivisieN}</h2>
       <div className="txt">
         <p>Tipo: Pontos corrido</p>
         <p>Situação: Em andamento</p>
@@ -101,9 +101,9 @@ export default function HomeC({ TITULO1, TITULO2, TITULO3, TITULO4, TITULO5, TIT
 
   </div>
   <div className="boxC">
-  <img className="logoH" src={LOGO6}/>
+  <img className="logoH" src={UEFAL}/>
     <div className="boxT">
-      <h2 className="nomeT">Champions League</h2>
+      <h2 className="nomeT">{UEFAN}</h2>
       <div className="txt">
         <p>Tipo: {TIPO2}</p>
         <p>Situação: Em andamento</p>
@@ -127,17 +127,17 @@ export default function HomeC({ TITULO1, TITULO2, TITULO3, TITULO4, TITULO5, TIT
     <h1 className="cTitulos">Resultados Recentes:</h1>
     </div>
   <div className="boxC">
-  <img src="./trofeu.png"/>
+  <img className="logoH" src={europaL}/>
     <div className="boxET">
-      <h2 className="nomeT">{TITULO6}</h2>
-      <div className="txt">
+      <h2 className="nomeT">{europaN}</h2>
+      <div className="txtR">
         <p>Tipo: {TIPO2}</p>
-        <p>Situação: <p>{SITUC}</p></p>
+        <p className="pResult">Situação: <p>{SITUC}</p></p>
       </div>
     </div>
 
     <div className="boxBC">
-      <button className="btn"> Participe </button>
+      <button className="btnR"> Resultado </button>
     </div>
 
   </div>

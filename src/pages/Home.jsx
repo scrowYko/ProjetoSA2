@@ -9,6 +9,7 @@ import premier from "../../public/premier.png"
 import UEFA from "../../public/UEFA.png"
 import eredivisie from "../../public/eredivisie.png"
 import franca from "../../public/franca.png"
+import europa from "../../public/europa.png"
 
 export default function Home() {
   const navigate = useNavigate()
@@ -34,20 +35,22 @@ export default function Home() {
     
     <NavB User="@Garsa" />
     <HomeC 
-    LOGO1={brasileirao}
-    LOGO2={laliga}
-    LOGO3={premier}
-    LOGO4={franca}
-    LOGO5={eredivisie}
-    LOGO6={UEFA}
+    brasileiraoL={brasileirao}
+    laligaL={laliga}
+    premierL={premier}
+    francaL={franca}
+    eredivisieL={eredivisie}
+    UEFAL={UEFA}
+    europaL={europa}
     TIPO1={'Pontos corridos'}
     TIPO2={'Eliminatorias'}
-    TITULO1={'Brasileirão'}
-    TITULO2={'La Liga'}
-    TITULO3={'Premier League'}
-    TITULO4={'LIGUE 1'}
-    TITULO5={'Campeonato Holandes Eredivisie:'}
-    TITULO6={'PAULISTA'}
+    brasileiraoN={'Brasileirão'}
+    laligaN={'La Liga'}
+    premierN={'Premier League'}
+    francaN={'LIGUE 1'}
+    eredivisieN={'Campeonato Holandes Eredivisie:'}
+    UEFAN={'Champions League'}
+    europaN={'Europa League'}
     CONTAGEM={'1/10'}
     SITUC={'Aberto'}
     />
