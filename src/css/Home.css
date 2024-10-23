@@ -196,3 +196,77 @@ body {
     display: flex;
     flex-direction: row;
 }
+
+@media screen and (max-width: 600px) {
+    .Box {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px; /* Adjust padding */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .logo {
+        width: 80px; /* Reduce logo size */
+    }
+
+    .user {
+        gap: 10px; /* Reduce gap */
+        flex-direction: column; /* Stack user items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    ul {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 10px; /* Reduce gap */
+    }
+
+    .search {
+        width: 100%; /* Make search bar full width */
+        height: 40px; /* Adjust height */
+        padding: 5px; /* Adjust padding */
+    }
+
+    .fundo {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .boxTd {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .cTitulos {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .nomeT {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .txt {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .txtR {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .btn {
+        padding: 8px 15px; /* Adjust button padding */
+    }
+
+    .btnR {
+        padding: 8px 15px; 
+    }
+
+    .boxC {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .boxT {
+        gap: 10px;
+    }
+
+    .pResult {
+        flex-direction: column; 
+    }
+}

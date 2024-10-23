@@ -188,3 +188,54 @@ a:hover {
 .pforgot{
     color: white;
 }
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%; 
+        padding: 10px; 
+    }
+
+    .h1forgot {
+        font-size: 18px;
+    }
+
+    input {
+        font-size: 14px; 
+    }
+
+    .botaoLoginC,
+    .signinEntrar,
+    .forgotEntrar {
+        width: 100%; 
+        margin-left: 0; 
+    }
+
+    .signinEntrar,
+    .forgotEntrar {
+        margin-left: 0; 
+    }
+
+    .cadastre,
+    .signinCadastro,
+    .signinEsquecer,
+    .forgotVolta {
+        font-size: 14px;
+    }
+
+    .caixaforgot {
+        width: 80vw; 
+        height: auto; 
+        margin-top: 50px; 
+    }
+
+    .signLogo {
+        justify-content: center; 
+    }
+
+    .ploginE,
+    .ploginC {
+        margin-left: 0; 
+        text-align: center; 
+    }
+}

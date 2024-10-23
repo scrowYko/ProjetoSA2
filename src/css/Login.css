@@ -107,3 +107,27 @@ button:hover {
     font-family: 'khandSB';
     cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+    .stc {
+        font-size: 100px; 
+    }
+
+    .subtitle {
+        font-size: 20px; 
+    }
+
+    .boxlogin {
+        margin: 50px 20px;
+        width: 90vw; 
+    }
+
+    .inputl {
+        width: 90%; 
+        font-size: 14px; 
+    }
+
+    .buttonentrar {
+        width: 80%;
+    }
+}
